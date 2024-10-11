@@ -13,6 +13,10 @@ h1, h2, p {
     text-align: left;
 }
 
+.price {
+    text-align: right;
+}
+
 
 body {
     /*background-color: rgb(122, 96, 62);*/
