@@ -9,8 +9,12 @@ h1, h2, p {
     background-color: burlywood;
 }
 
-/*
-body {
-    background-color: burlywood;
+.flavor {
+    text-align: left;
 }
-*/
+
+
+body {
+    /*background-color: rgb(122, 96, 62);*/
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+}
