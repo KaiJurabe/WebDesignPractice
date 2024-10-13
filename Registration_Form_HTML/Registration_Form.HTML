@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+        <title>Registration Form</title>
+        <meta charset="utf-8">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Registration From</h1>
+        <p>Please fill out this form with the required information</p>
+        <form method="post" action="https://register-demo.freecodecamp.org">
+            <fieldset>
+                <label for="first-name">Please enter your first name: <input required type="text" id="first-name" name="first-name"></label>
+                <label for="last-name">Please enter your last name: <input required type="text" id="last-name" name="last-name"></label>
+                <label for="email">Please enter your email: <input required type="email" id="email" name="email"></label>
+                <label for="new-password">Please enter a new password: <input required type="password" id="new-password" pattern="[a-z0-5]{8,}" name="new-password"> </label>
+            </fieldset>
+            <fieldset>
+                <legend>Account type (required)</legend>
+                <label><input checked type="radio" name="account-type" class="inline">Personal</label> <!--The name attribute puts radio buttons into relation-->
+                <label><input type="radio" name="account-type" class="inline">Business</label><!--Dont forget to link labels with their inputs!!-->
+            </fieldset>
+            <fieldset>
+                <label for="profile-picture">Upload a profile picture: <input type="file" id="profile-picture" name="profile-picture"></label> 
+                <label for="age"> Input your age (years): <input id ="age" type="number" min="13" max="120" name="age"> </label>
+                <label for="referrer"> How did you hear about us?
+                <select id="referrer" name="referrer">
+                    <option value="">(select one)</option> <!--Values need to be assigned to options, so you dont get useless values from pointless selections-->
+                    <option value="1">freeCodeCamp News</option>
+                    <option value="2">freeCodeCamp YouTube Channel</option>
+                    <option value="3">freeCodeCamp Forum</option>
+                    <option value="4">Other</option>
+                </select>
+                </label>
+                <label for="bio">Provide a bio: <textarea id="bio" rows="3" cols="30" placeholder="I like coding on the beach..." name="bio"></textarea></label>
+            </fieldset>
+              <label for="terms-and-conditions"><input required type="checkbox" id="terms-and-conditions" name="terms" class="inline">I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label>
+            <input type="submit" value="Submit"> <!--Creates a submit button that is tied to the afore created form (line 11)-->
+        </form>
+    </body>
+  </html>
